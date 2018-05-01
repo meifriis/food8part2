@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img id="stedforside" src="img/logo.png" alt="logo">
+    <div class="dropdown">
+        <button class="dropbtn"><img src="img/menu%20hvid.png"></button>
+        <div class="dropdown-content">
+            <a href="index.html"> Nyheder </a>
+            <a href="steder.html"> Steder </a>
+            <a href="lever.html"> Leverandører </a>
+            <a href="guides.html"> Guides </a>
+            <a href="om.html"> Om Food8 </a>
+
+
+        </div>
+    </div>
+
+
+    <section>
+        <article>
+            <a href="index.html"><button class="tilbage"> <u>Tilbage</u> </button> </a>
+            <h2 id="overskrift" data_overskrift> </h2>
+            <img id="imgnyhed1" data_foto src="" alt="">
+            <p id="beskrivelse" data_beskrivelse> </p>
+        </article>
+    </section>
+
+
+    <footer>
+        <div class="socialmedia">
+            <div class="content_box">
+                <a href="https://www.facebook.com/food8dk/" target="_blank">
+                    <img alt="facebook" src="img/facebook%20logo.png">
+                </a>
+                <a href="https://www.instagram.com/food8dk/" target="_blank">
+                    <img alt="content_box instagram" src="img/insta.png">
+                </a>
+            </div>
+
+        </div>
+        <div class="content_box2">
+            <a href="http://stromworks.com/" target="_blank">
+                    <img alt="content_box strom" src="img/strom.png">
+                </a>
+        </div>
+        <div>
+            <p>info@food8.dk</p>
+            <p><a href="https://food8.dk/cookie-og-privatlivspolitik/"><u>Cookie- og privatlivspolitik</u></a></p>
+            <p>Food8 ApS — Langelinie 10, 2100 København Ø — CVR nr. 39306999</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", hentJson);
+        let url = new URL(window.location.href);
+        let searchParams = new URLSearchParams(url.search);
+        let id = searchParams.get("id");
+        let apiURL = "http://magnuskea.dk/kea/food8/wordpress/wp-json/wp/v2/nyhedder/" + id;
+        let nyhed = {};
+
+        async function hentJson() {
+            let dataJson = await fetch(apiURL);
+            nyhed = await dataJson.json();
+            console.log("Fetch it Gretchen");
+            visNyhed();
+        }
+
+
+
+        function visNyhed() {
+            let display = document.querySelector("section");
+            console.log(nyhed);
+            display.querySelector("[data_overskrift]").textContent = nyhed.acf.overskrift_;
+            display.querySelector("[data_foto]").src = nyhed.acf.billede.url;
+            display.querySelector("[data_foto]").alt = nyhed.acf.billede.alt;
+            display.querySelector("[data_beskrivelse]").innerHTML = nyhed.acf.beskrivelse_;
+            display.querySelector("[data_foto]").addEventListener("click", () => {
+                location.href = "nyhed.html?id=" + nyhed.id;
+
+
+
+            });
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(252, 253, 255);
+}
+
+#forside img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+#splash {
+    padding: 10px;
+    margin-bottom: -25px;
+}
+
+
+#map {
+    width: 90vw;
+    height: 90vw;
+    background-color: blue;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/******************MENU************************/
+
+.dropbtn {
+    background-color: #57626e;
+    color: white;
+    padding: 4px;
+    width: 13%;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*------ DROPDOWN CONTAINER -------*/
+
+.dropdown {
+    display: inline-block;
+    width: 100%;
+    background-color: #57626e;
+    z-index: 1;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.dropdown ul {
+    background-color: #7cccba;
+    list-style-type: none;
+}
+
+
+/*-------- DROPDOWN INDHOLD -------*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: "Open Sans", sans-serif;
+    background-color: #57626e;
+    font-size: 1em;
+    min-width: 190px;
+    z-index: 1;
+    margin-left: 110px;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+    color: #7cccba;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn img {
+    width: 100%;
+}
+
+#stedforside {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/**************************OVERORDNET********************/
+
+#kontrol a,
+#menu a {
+    text-decoration: none;
+    color: #72C8B6;
+}
+
+#beskrivelse a {
+    text-decoration: none;
+    color: #7cccba;
+}
+
+#beskrivelse {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    font-size: 1em;
+    border-bottom: solid #dddddd 2px;
+}
+
+#overskrift {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 10px;
+    margin-bottom: -20px;
+
+}
+
+#menu {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+#kontakt {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+#kontakt a {
+    text-decoration: none;
+    color: black;
+}
+
+#kontrol {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+
+
+
+/****FORSIDE******/
+
+#forside {
+    margin-bottom: 20px;
+}
+
+#imgsforside {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/***NYHEDER******/
+
+#imgnyhed {
+    width: 100%;
+}
+
+#overskrift {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+
+}
+
+
+#lillebeskrivelse {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    padding: 10px;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+#imgnyhed1 {
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+button {
+    border: none;
+    padding: 10px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color: transparent;
+    text-align: center;
+    padding-left: 20px;
+
+}
+
+button:hover {
+    opacity: 0.5;
+    color: #7cccba;
+}
+
+/***OM***********/
+
+#om {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+
+#om a {
+    text-decoration: none;
+    color: #7cccba;
+}
+
+/*****GUIDES*****/
+
+#imgguide {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#overskriftguid {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 10px;
+    margin-bottom: -20px;
+
+}
+
+bekrivelse a {
+    color: #7cccba;
+}
+
+/*****STEDER******/
+
+#steddetails {
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+summary {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7em;
+}
+
+summary:hover {
+    color: #7cccba;
+}
+
+
+#imgsted {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#imgsted1 {
+    width: 90%;
+    display: block;
+    margin: auto;
+
+}
+
+#stedbeskrivelse {
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+details {
+    text-align: center;
+}
+
+/************BOOK BOKS********************/
+
+fieldset p {
+    color: white;
+    font-size: 2.4em;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+}
+
+#dato {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: none;
+}
+
+
+
+
+#bookbord {
+    background-color: #57626e;
+    width: 90vw;
+    height: 90vw;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+}
+
+#book {
+    text-decoration: none;
+    width: 50vw;
+    height: 13vw;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    color: #070e14;
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2px;
+}
+
+#date,
+#personer {
+    width: 55vw;
+    height: 7vw;
+    border-radius: 15px;
+    padding-left: 12px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+
+/*****LEVERANDØR*****/
+
+#imgleverandor {
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*****FOOTER*****/
+
+.socialmedia {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content_box img {
+    width: 15%;
+}
+
+.content_box {
+    grid-column: 2 / 4;
+    padding: 16px;
+}
+
+.content_box2 img {
+    width: 30%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #b2bac9;
+    width: 100%;
+    position: absolute;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 0.7em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+
+}
